@@ -58,6 +58,10 @@ const NavigationScreen = createStackNavigator(
             screen: ({ navigation }) => (
             <View style={{ padding: 100 }} >
                 <Button title="Tab 1 e Git" onPress={() => { navigation.navigate('Page1'); }} />
+                <Button
+                    onPress={() => navigation.goBack()}
+                    title="Geri Git"
+                />
             </View>),
             navigationOptions: ({ navigation }) => ({
                 title: `${navigation.state.params.name}'nın Mekanı`,
