@@ -3,23 +3,6 @@ import { View, Button } from 'react-native';
 import { createStackNavigator, DrawerActions } from 'react-navigation';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-const RightBarButton = (title, onPress) => (
-        <Button
-          title={title}
-          color="purple"
-          backgroundColor='white'
-          borderRadius={12}
-          fontSize={11}
-          buttonStyle={{ paddingTop: 5, paddingBottom: 5, paddingLeft: 8, paddingRight: 8 }}
-          onPress={onPress} 
-        />
-    );
-  
-  const ShopButton = (navigation) => {
-    const { navigate } = navigation;
-    const onPress = () => { navigate('Shop'); };
-    return RightBarButton('Shop', onPress);
-  };
 
 const NavigationScreen = createStackNavigator(
     {
